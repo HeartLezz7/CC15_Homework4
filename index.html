@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Under Construction page</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans', sans-serif;
+            font-family: 'Ubuntu', sans-serif;
+        }
+        body {
+            background-image: url(./aurora2.jpeg) ;
+            background-repeat: no-repeat;
+            height: 100%;
+            position: relative;
+        }
+        .box {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+
+        }
+        h1 {
+            font-size: 50px;
+        }
+        .upper {
+            text-align: center;
+            text-transform: uppercase;
+            color: white;
+            margin: 10px;
+        }
+        .loading {
+            background-color: white;
+            height: 15px;
+            width: 75vw;
+            box-shadow: 5px 5px 35px 2px rgba(0,0,0,0.76);
+        }
+        
+        .status {
+            width: 20%;
+            height: 100%;   
+            background-color: rgb(42, 113, 236);
+            margin-bottom: 5px;
+        }
+        .percent {
+            display: flex;
+            justify-content: space-between;
+            color: white;
+        }
+        button.nor {
+            background-color: rgb(42, 113, 236);
+            width: 120px;
+            padding: 10px;
+            margin-bottom: 20px;
+            color: white;
+        }
+
+        .about {
+            margin-top: 50px;
+            height: 100px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        i {
+            color: white;
+            transform: scale(1.8);
+        }
+        .icon {
+            width: 250px;
+            display: flex;
+            justify-content: space-around;
+        }
+        i {
+            border: 1px solid white;
+            padding: 3px;
+            border-radius: 50%;
+        }
+        nav {
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 20px;
+            margin-right: 100px;
+            position: absolute;
+            top: 0;
+            right: 0;
+        }
+        a {
+            text-decoration: none;
+            color: white;
+        }
+        .copy {
+            position: absolute;
+            bottom: 0px;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            transform: translateY(-100%);
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <nav>
+            <a href="./index.html">Home</a>
+        </nav>
+        <h1 class="upper"> under <br> construction </h1>
+        <div class="bar">
+            <p class="upper">site nearly ready</p>
+            <div class="loading">
+                <div class="status"></div>
+                <div class="percent">
+                    <p>0%</p>
+                    <p>100%</p>
+                </div>
+            </div>
+        </div>
+        <div class="about">
+            <div>
+                <button class="nor">Notify Me!</button>     
+            </div>
+            <div class="icon">
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin-in"></i>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+        </div>
+        <div class="copy">
+            <hr style="width: 75vw;">
+            <p>&#169; 2023 by Under Construction</p>
+        </div>
+    </div>
+
+</body>
+</html>
